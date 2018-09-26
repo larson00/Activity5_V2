@@ -12,7 +12,7 @@ public class Main {
     System.out.println(myVc.getChassisType());
     System.out.println(myVc.toString());
 
-    VehicleChassis myVc2 = new VehicleChassis(chassisName: "eeee");
+    VehicleChassis myVc2 = new VehicleChassis( "eeee");
 
   }
 }
