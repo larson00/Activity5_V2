@@ -1,4 +1,5 @@
 import java.util.Date;
+
 public class Main {
 
   public static void main(String[] args) {
@@ -19,19 +20,21 @@ public class Main {
     System.out.println(myVc2.getChassisType());
     //System.out.println(myVc2.toString());
 
+    // Write a static main method that tests two scenarios:
     VehicleFrame myVf1 = new VehicleFrame("myVf1_frame");
     System.out.println(myVf1.toString());
     myVf1.setChassisType("frame11111");
     System.out.println(myVf1.getChassisType());
     //System.out.println(myVf1.toString());
 
+    // Write a static main method that tests two scenarios:
+    // One that prints a generic set of strings, like:
     ManufacturedEngine myEn = new ManufacturedEngine();
     System.out.println(myEn.toString());
-    ManufacturedEngine myEn2 = new ManufacturedEngine("Honda", new Date(), "H-Series",
-        "H23A1", 4, "88 AKI", "2WD: Two-Wheel Drive");
+    // One that accepts call parameters and returns the following:
+    ManufacturedEngine myEn2 = new ManufacturedEngine("Honda", new Date(),
+        "H-Series", "H23A1", 4, "88 AKI", "2WD: Two-Wheel Drive");
     System.out.println(myEn2.toString());
-
-
 
 
   }
