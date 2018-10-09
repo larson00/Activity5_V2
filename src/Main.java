@@ -36,6 +36,15 @@ public class Main {
         "H-Series", "H23A1", 4, "88 AKI", "2WD: Two-Wheel Drive");
     System.out.println(myEn2.toString());
 
+    // Write a static main method that tests two scenarios
+    InteriorFeature myIn = new InteriorFeature();
+    // One that prints all fuel grade values, like:
+    // Interior [Generic]
+    System.out.println(myIn.toString());
+    // Another like:
+    // Interior [Climate Control]
+    InteriorFeature myIn2 = new InteriorFeature("Climate Control");
+    System.out.println(myIn2.toString());
 
   }
 }
