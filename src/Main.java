@@ -4,7 +4,7 @@ public class Main {
 
   public static void main(String[] args) {
 
-    //• Write a static main method that creates two objects,
+    //  Write a static main method that creates two objects,
     // one with the default constructor and the other with the
     //  constructor with parameters. Give sample data for the parameters
 
@@ -45,6 +45,17 @@ public class Main {
     // Interior [Climate Control]
     InteriorFeature myIn2 = new InteriorFeature("Climate Control");
     System.out.println(myIn2.toString());
+
+    // Write a static main method that tests two scenarios:
+    ExteriorFeature myEx = new ExteriorFeature();
+    //One that prints all fuel grade values, like:
+    //Exterior [Generic]
+    System.out.println(myEx.toString());
+    //Another like
+    //Exterior [Fog Lamps]
+    ExteriorFeature myEx2 = new ExteriorFeature("Fog Lamps");
+    System.out.println(myEx2.toString());
+
 
   }
 }
