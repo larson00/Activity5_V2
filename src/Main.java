@@ -14,18 +14,13 @@ public class Main {
     System.out.println(myVc.getChassisType());
     //System.out.println(myVc.toString());
 
-    VehicleChassis myVc2 = new VehicleChassis("myVc2_Chassis");
-    System.out.println(myVc2.toString());
-    myVc2.setChassisType("Chassis2222");
-    System.out.println(myVc2.getChassisType());
-    //System.out.println(myVc2.toString());
-
     // Write a static main method that tests two scenarios:
-    VehicleFrame myVf1 = new VehicleFrame("myVf1_frame");
-    System.out.println(myVf1.toString());
-    myVf1.setChassisType("frame11111");
-    System.out.println(myVf1.getChassisType());
-    //System.out.println(myVf1.toString());
+    VehicleFrame myVf = new VehicleFrame();
+    VehicleFrame myVf2 = new VehicleFrame("myVf1_frame");
+    System.out.println(myVf2.toString());
+    //myVf2.setChassisType("frame11111");
+    //System.out.println(myVf2.getChassisType());
+
 
     // Write a static main method that tests two scenarios:
     // One that prints a generic set of strings, like:
