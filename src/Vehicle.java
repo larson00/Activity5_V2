@@ -44,46 +44,96 @@ public class Vehicle implements Chassis, Engine {
 
   @Override
   public Chassis getChassisType() {
-    return this;
+    return vehicleFrame;
   }
 
   @Override
   public void setChassisType(String vehicleChassis) {
+    this.vehicleFrame.setChassisType(vehicleChassis);
 
   }
 
   @Override
   public void setEngineCylinders(int engineCylinders) {
+    vehicleEngine.setEngineCylinders(engineCylinders);
 
   }
 
   @Override
   public void setEngineManufacturedDate(Date date) {
+    vehicleEngine.setEngineManufacturedDate(date);
+
 
   }
 
   @Override
   public void setEngineManufacturer(String manufacturer) {
+    vehicleEngine.setEngineManufacturer(manufacturer);
+
 
   }
 
   @Override
   public void setEngineMake(String engineMake) {
+    vehicleEngine.setEngineMake(engineMake);
+
 
   }
 
   @Override
   public void setEngineModel(String engineModel) {
+    vehicleEngine.setEngineModel(engineModel);
+
 
   }
 
   @Override
   public void setDriveTrain(String driveTrain) {
+    vehicleEngine.setDriveTrain(driveTrain);
 
+
+  }
+
+  public void setVehicleManufacturer(String vehicleManufacturer) {
+    this.vehicleManufacturer = vehicleManufacturer;
+  }
+
+  public void setVehicleMake(String vehicleMake) {
+    this.vehicleMake = vehicleMake;
+  }
+
+  public void setVehicleModel(String vehicleModel) {
+    this.vehicleModel = vehicleModel;
+  }
+
+  public void setVehicleFrame(Chassis vehicleFrame) {
+    this.vehicleFrame = vehicleFrame;
+  }
+
+  public void setVehicleType(String vehicleType) {
+    this.vehicleType = vehicleType;
+  }
+
+  public void setVehicleEngine(Engine vehicleEngine) {
+    this.vehicleEngine = vehicleEngine;
   }
 
   @Override
   public void setEngineType(String fuel) {
+    vehicleEngine.setEngineType(fuel);
 
+  }
+
+  @Override
+  public String toString() {
+    return
+        "Manufacturer Name : " + vehicleManufacturer + "\n" +
+            "Manufactured Date : " + vehicleManufacturedDate + "\n" +
+            "Vehicle Make : " + vehicleMake + "\n" +
+            "Vehicle Model : " + vehicleModel + "\n" +
+            "Vehicle Frame : " + vehicleFrame + "\n" +
+            "Vehicle Type : " + vehicleType + "\n" +
+            "Drive Train : " + driveTrain + "\n" +
+            vehicleEngine;
   }
 }
