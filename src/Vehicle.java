@@ -28,9 +28,9 @@ public class Vehicle implements Chassis, Engine {
   }
 
   // A public overloaded constructor with values for all of the variables defined above.
-  public Vehicle(Date vehicleManufacturedDate, String vehicleManufacturer, String vehicleMake,
-      String vehicleModel, String vehicleType, String driveTrain, Engine vehicleEngine,
-      Chassis vehicleFrame) {
+  public Vehicle(Date vehicleManufacturedDate, String vehicleManufacturer,
+      String vehicleMake, String vehicleModel, Chassis vehicleFrame, String vehicleType,
+      String driveTrain, Engine vehicleEngine) {
     this.vehicleManufacturedDate = vehicleManufacturedDate;
     this.vehicleManufacturer = vehicleManufacturer;
     this.vehicleMake = vehicleMake;
@@ -41,11 +41,12 @@ public class Vehicle implements Chassis, Engine {
     this.vehicleEngine = vehicleEngine;
   }
 
-
+  // Public method implementations for the Chassis interface
   @Override
   public Chassis getChassisType() {
     return vehicleFrame;
   }
+  // Public method implementations for all of the public methods found in the Engine interface.
 
   @Override
   public void setChassisType(String vehicleChassis) {
@@ -94,6 +95,7 @@ public class Vehicle implements Chassis, Engine {
 
   }
 
+  // Public method implementations that set all instance variables
   public void setVehicleManufacturer(String vehicleManufacturer) {
     this.vehicleManufacturer = vehicleManufacturer;
   }
@@ -124,6 +126,7 @@ public class Vehicle implements Chassis, Engine {
 
   }
 
+  // A public toString method that returns the following:
   @Override
   public String toString() {
     return
