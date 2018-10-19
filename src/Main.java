@@ -64,6 +64,7 @@ public class Main {
         new ManufacturedEngine("Honda", new Date(),
             "H-Series", "H23A1", 4, "88 AKI", "2WD: Two-Wheel Drive" ));
     System.out.println(myV2);
+    System.out.println(myV2);
 
 
 
