@@ -57,14 +57,7 @@ public class Main {
     System.out.println(myV.toString());
     System.out.println(myV);
     // One that accepts call parameters and returns the following:
-    /*Vehicle myV2 = new Vehicle(new Date(), "Honda",
-        "Prelude", "Coupe",
-        new VehicleChassis("Unibody"), "null",
-        "type",
-        new ManufacturedEngine("Honda", new Date(),
-        "H-Series", "H23A1", 4, "88 AKI", "2WD: Two-Wheel Drive"));
-    System.out.println(myV2);
-    */
+
     Vehicle myV2 = new Vehicle(new Date(), "Honda", "Prelude", "Coupe",
         new VehicleChassis("Unibody"),
         "null", "type",
