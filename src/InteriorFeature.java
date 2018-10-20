@@ -6,13 +6,13 @@
 public class InteriorFeature implements Feature {
 
   // Create a String named interiorFeature as an instance variable.
-  private final String interiorFeature;
+  String interiorFeature;
 
 
   // A public default constructor without parameters that sets the interiorFeature instance
 // variable to “Generic”.
   public InteriorFeature() {
-    interiorFeature = "Generic";
+    this.interiorFeature = "Generic";
   }
 
   // An overloaded constructor with the following value:
@@ -27,20 +27,21 @@ public class InteriorFeature implements Feature {
 // instance of String.
   @Override
   public String getFeature() {
-    return null;
+    return interiorFeature;
   }
 
   // A public method setFeature that takes a String parameter interiorFeature and that returns a void.
 // It should set the instance variable interiorFeature.
   @Override
   public void setFeature(String interiorFeature) {
+    this.interiorFeature = interiorFeature;
 
   }
 
   // • A public toString method that returns the following: Interior [Generic]
   @Override
   public String toString() {
-    return "Interior " + interiorFeature;
+    return "Interior [" + interiorFeature + "]";
 
   }
 

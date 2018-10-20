@@ -16,14 +16,14 @@ public class Vehicle implements Chassis, Engine {
   // A public default constructor with no formal parameters and
   // initialize all instance variables with generic literal values.
   public Vehicle() {
-    vehicleManufacturedDate = new Date();
-    vehicleManufacturer = "Generic";
-    vehicleMake = "Generic";
-    vehicleModel = "Generic";
-    vehicleFrame = new VehicleChassis();
-    vehicleType = "Generic";
-    driveTrain = "Generic";
-    vehicleEngine = new ManufacturedEngine();
+    this.vehicleManufacturedDate = new Date();
+    this.vehicleManufacturer = "Generic";
+    this.vehicleMake = "Generic";
+    this.vehicleModel = "Generic";
+    this.vehicleFrame = new VehicleChassis();
+    this.vehicleType = "Generic";
+    this.driveTrain = "Generic";
+    this.vehicleEngine = new ManufacturedEngine();
 
   }
 
@@ -134,7 +134,7 @@ public class Vehicle implements Chassis, Engine {
             "Manufactured Date : " + vehicleManufacturedDate + "\n" +
             "Vehicle Make : " + vehicleMake + "\n" +
             "Vehicle Model : " + vehicleModel + "\n" +
-            "Vehicle Frame : " + vehicleFrame + "\n" +
+            //"Vehicle Frame : " + vehicleFrame + "\n" +
             "Vehicle Type : " + vehicleType + "\n" +
             "Drive Train : " + driveTrain + "\n" +
             vehicleEngine;

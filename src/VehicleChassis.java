@@ -7,7 +7,7 @@ public class VehicleChassis implements Chassis {
   //Set the chassisName instance variable
   //use the interface constant as the default String value.
   public VehicleChassis() {
-    chassisName = chassis;
+    this.chassisName = chassis;
 
   }
   //an overloaded constructor with the following value:

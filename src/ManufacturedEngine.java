@@ -15,42 +15,59 @@ public class ManufacturedEngine implements Engine {
   //literal values.
   public ManufacturedEngine() {
 
-    engineManufacturer = "Generic";
-    engineManufacturedDate = new Date();
-    engineMake = "Generic";
-    engineModel = "Generic";
-    engineCylinders = 0;
-    engineType = "85 AKI";
-    driveTrain = "2WD: Two-Wheel Drives";
+    this.engineManufacturer = "Generic";
+    this.engineManufacturedDate = new Date();
+    this.engineMake = "Generic";
+    this.engineModel = "Generic";
+    this.engineCylinders = 0;
+    this.engineType = "Generic";
+    this.driveTrain = "Generic";
 
   }
 
+
+  public ManufacturedEngine(String manufacturer, Date manufacturedDate,
+      String make, String model, String type, int cylinders,
+      String train) {
+    this.engineManufacturer = manufacturer;
+    this.engineManufacturedDate = manufacturedDate;
+    this.engineMake = make;
+    this.engineModel = model;
+    this.engineCylinders = cylinders;
+    this.engineType = type;
+    this.driveTrain = train;
+  }
+
+  /*
+  public static void main(String[] args) {
+    ManufacturedEngine manu = new ManufacturedEngine();
+    System.out.println(manu.toString());
+    ManufacturedEngine manu2 = new ManufacturedEngine(
+        "Honda",
+        new Date(),
+        "H-Series",
+        "H23A1",
+        "88 AKI",
+        4,
+        "2WD: Two-Wheel Drive"
+    );
+    System.out.println(manu2.toString());
+
+  }
+  */
   // A public toString method that returns the following:
   @Override
   public String toString() {
     return
-        " Engine Manufacturer = " + engineManufacturer + '\n' +
-            " Engine Manufactured Date = " + engineManufacturedDate + '\n' +
-            " Engine Make = " + engineMake + '\n' +
-            " Engine Model = " + engineModel + '\n' +
-            " Engine Cylinders = " + engineCylinders + '\n' +
-            " Engine Type = " + engineType + '\n' +
-            " DriveTrain = " + driveTrain + '\n';
-  }
-
-  public ManufacturedEngine(String manufacturer, Date manufacturedDate,
-      String make, String model, int cylinders, String type,
-      String train) {
-    engineManufacturer = manufacturer;
-    engineManufacturedDate = manufacturedDate;
-    engineMake = make;
-    engineModel = model;
-    engineCylinders = cylinders;
-    engineType = type;
-    driveTrain = train;
+        "Engine Manufacturer : " + engineManufacturer + "\n" +
+            "Engine Manufactured : " + engineManufacturedDate + "\n" +
+            "Engine Make : " + engineMake + "\n" +
+            "Engine Model : " + engineModel + "\n" +
+            "Engine Type : " + engineType + "\n" +
+            "Engine Cylinders : " + engineCylinders + "\n" +
+            "Drive Train : " + driveTrain + "\n";
   }
 // A public method implementations for all of the public methods found in the Engine interface.
-
 
 
   public void setEngineCylinders(int engineCylinders) {
@@ -93,4 +110,5 @@ public class ManufacturedEngine implements Engine {
     this.engineType = fuel;
 
   }
+
 }

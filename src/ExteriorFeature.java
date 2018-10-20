@@ -6,11 +6,11 @@
 public class ExteriorFeature implements Feature {
 
   // Create a String named exteriorFeature as an instance variable.
-  private final String exteriorFeature;
+  String exteriorFeature;
 
   // A public default constructor without parameters that sets the exteriorFeature instance variable
   public ExteriorFeature() {
-    exteriorFeature = "Generic";
+    this.exteriorFeature = "Generic";
   }
 
   // An overloaded constructor with the following value:
@@ -26,13 +26,14 @@ public class ExteriorFeature implements Feature {
 // an instance of String.
   @Override
   public String getFeature() {
-    return null;
+    return exteriorFeature;
   }
 
   // A public method setFeature that takes a String parameter exteriorFeature and that
 // returns a void. It should set the instance variable exteriorFeature.
   @Override
   public void setFeature(String exteriorFeature) {
+    this.exteriorFeature = exteriorFeature;
 
   }
 
@@ -40,6 +41,6 @@ public class ExteriorFeature implements Feature {
 // Exterior [Generic]
   @Override
   public String toString() {
-    return "Exterior " + exteriorFeature;
+    return "Exterior [" + exteriorFeature + "]";
   }
 }
