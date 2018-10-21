@@ -26,10 +26,10 @@ public class ManufacturedEngine implements Engine {
   }
 
 
-  public ManufacturedEngine(String manufacturer, Date manufacturedDate,
+  public ManufacturedEngine(String engineManufacturer, Date manufacturedDate,
       String make, String model, String type, int cylinders,
       String train) {
-    this.engineManufacturer = manufacturer;
+    this.engineManufacturer = engineManufacturer;
     this.engineManufacturedDate = manufacturedDate;
     this.engineMake = make;
     this.engineModel = model;
@@ -82,8 +82,8 @@ public class ManufacturedEngine implements Engine {
   }
 
 
-  public void setEngineManufacturer(String manufacturer) {
-    this.engineManufacturer = manufacturer;
+  public void setEngineManufacturer(String engineManufacturer) {
+    this.engineManufacturer = engineManufacturer;
 
   }
 

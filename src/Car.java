@@ -16,10 +16,12 @@ public class Car extends Vehicle {
     this.carAxle = 2;
   }
 
+
   public Car(Date vehicleManufacturedDate, String vehicleManufacturer,
       String vehicleMake, String vehicleModel, Chassis vehicleFrame, String vehicleType,
       String driveTrain, Engine vehicleEngine, Feature[] feature, int carAxle) {
-    super();
+    super(vehicleManufacturedDate, vehicleManufacturer, vehicleMake, vehicleModel,
+        vehicleFrame, vehicleType, driveTrain, vehicleEngine);
     this.feature = feature;
     this.carAxle = carAxle;
 
@@ -47,6 +49,7 @@ public class Car extends Vehicle {
   public int getCarAxle() {
     return carAxle;
   }
+
 
   @Override
   public String toString() {

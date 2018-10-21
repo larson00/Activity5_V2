@@ -68,8 +68,8 @@ public class Vehicle implements Chassis, Engine {
   }
 
   @Override
-  public void setEngineManufacturer(String manufacturer) {
-    vehicleEngine.setEngineManufacturer(manufacturer);
+  public void setEngineManufacturer(String engineManufacturer) {
+    vehicleEngine.setEngineManufacturer(engineManufacturer);
 
 
   }
@@ -112,9 +112,11 @@ public class Vehicle implements Chassis, Engine {
     this.vehicleFrame = vehicleFrame;
   }
 
+
   public void setVehicleType(String vehicleType) {
     this.vehicleType = vehicleType;
   }
+
 
   public void setVehicleEngine(Engine vehicleEngine) {
     this.vehicleEngine = vehicleEngine;
@@ -136,7 +138,7 @@ public class Vehicle implements Chassis, Engine {
             "Vehicle Model : " + vehicleModel + "\n" +
             //"Vehicle Frame : " + vehicleFrame + "\n" +
             "Vehicle Type : " + vehicleType + "\n" +
-            "Drive Train : " + driveTrain + "\n" +
+            //"Drive Train : " + driveTrain + "\n" +
             vehicleEngine;
   }
 }
